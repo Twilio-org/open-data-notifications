@@ -1,0 +1,38 @@
+{
+  "name": "open-data-notifications",
+  "version": "1.0.0",
+  "description": "Notification system for open data sources",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && jest",
+    "standard-fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twilio-org/open-data-notifications.git"
+  },
+  "keywords": [
+    "notifications",
+    "twilio",
+    "open",
+    "data",
+    "open",
+    "media"
+  ],
+  "author": "Twilio.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Twilio-org/open-data-notifications/issues"
+  },
+  "homepage": "https://github.com/Twilio-org/open-data-notifications#readme",
+  "devDependencies": {
+    "jest-cli": "^20.0.1",
+    "standard": "^10.0.2"
+  },
+  "engines": {
+    "node": "7.x"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
