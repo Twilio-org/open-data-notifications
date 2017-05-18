@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node bin/start.js",
     "test": "standard && jest",
+    "jest": "jest",
+    "standard": "standard",
     "standard-fix": "standard --fix"
   },
   "repository": {
