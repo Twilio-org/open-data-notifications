@@ -4,6 +4,7 @@
   "description": "Notification system for open data sources",
   "main": "index.js",
   "scripts": {
+    "start": "node bin/start.js",
     "test": "standard && jest",
     "standard-fix": "standard --fix"
   },
@@ -27,12 +28,22 @@
   "homepage": "https://github.com/Twilio-org/open-data-notifications#readme",
   "devDependencies": {
     "jest-cli": "^20.0.1",
-    "standard": "^10.0.2"
+    "standard": "^10.0.2",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2"
   },
   "engines": {
     "node": "7.x"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testRegex": "./test/.*.js$"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "config": "^1.26.1",
+    "express": "^4.15.2",
+    "helmet": "^3.6.0",
+    "twilio": "^3.0.0"
   }
 }
