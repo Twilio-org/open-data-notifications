@@ -30,6 +30,7 @@
   "homepage": "https://github.com/Twilio-org/open-data-notifications#readme",
   "devDependencies": {
     "jest-cli": "^20.0.1",
+    "nock": "^9.0.13",
     "standard": "^10.0.2",
     "supertest": "^3.0.0",
     "supertest-as-promised": "^4.0.2"
@@ -46,6 +47,7 @@
     "config": "^1.26.1",
     "express": "^4.15.2",
     "helmet": "^3.6.0",
+    "request": "^2.81.0",
     "twilio": "^3.0.0"
   }
 }
