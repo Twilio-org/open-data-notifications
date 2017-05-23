@@ -27,7 +27,7 @@ const openstates = {
         if (err) return reject(err)
 
         return resolve({
-          status: response.status,
+          status: response.statusCode,
           body: JSON.parse(body)
         })
       })
