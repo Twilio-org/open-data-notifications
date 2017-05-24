@@ -22,4 +22,8 @@ cfg.twilio = {
   authToken: process.env.TWILIO_AUTH_TOKEN || ''
 }
 
+cfg.openstates = {
+  apiKey: process.env.OPENSTATES_API_KEY || ''
+}
+
 module.exports = cfg

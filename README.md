@@ -10,7 +10,9 @@ The #1 requested feature for both projects is the ability to be notified when up
 
 ## Local Development
 
-TODO
+1. Create a `config/development.js` file for local settings.
+1. Fill it with your information, referencing `config/default.js` for available
+   settings.
 
 ## Production Deployment (Heroku)
 
