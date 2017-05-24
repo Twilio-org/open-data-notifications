@@ -1,7 +1,7 @@
 /* global describe, it, expect */
 'use strict'
 
-const request = require('supertest-as-promised')
+const request = require('supertest')
 const app = require('../src/server/webapp')
 
 describe('SMS routes', () => {
