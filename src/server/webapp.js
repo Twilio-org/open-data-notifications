@@ -9,7 +9,7 @@ const smsRouter = require('./controllers/sms')
 const app = express()
 
 // Configure Express webapp with necessary middleware
-app.use(express.static(path.join('..', '..', 'public')))
+app.use(express.static(path.join(__dirname, '..', '..', 'public')))
 app.use(urlencoded({ extended: false }))
 
 // Application routes
