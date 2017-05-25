@@ -16,10 +16,11 @@ const openstates = {
   /**
    * Returns the JSON from an Open States API request method.
    */
-  get (method) {
+  get (method, query) {
     let requestOptions = {
       url: `${API_BASE}/${method}`,
-      headers: { 'x-api-key': API_KEY }
+      headers: { 'x-api-key': API_KEY },
+      qs: query
     }
 
     return new Promise((resolve, reject) => {

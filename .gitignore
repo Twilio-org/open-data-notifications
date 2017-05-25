@@ -58,4 +58,4 @@ typings/
 
 # local config files
 .env
-config/development.js
+config/local.js
