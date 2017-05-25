@@ -28,7 +28,7 @@ There will be two primary components of the system - a conversational "bot" inte
 The system will periodically poll open states for new information related to pieces of legislation and upcoming events (hearings, committees, etc). When the system determines what information is new since the last time the API was polled, It will construct a Notify tag dynamically in the format:
 
 ```
-<subscription type>;<state/other data>;bill ID
+<subscription type>;<state/other data>;<bill ID>
 ```
 
 That batch of notifications is sent to Notify, who then determines which of the subscribed users to send a Notification to.

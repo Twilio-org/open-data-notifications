@@ -13,7 +13,7 @@ For the MVP of this project, we'll be creating a notification system for legisla
 
 This project is in active development - [please register and join our Slack team](https://www.twilio.org/developers) to participate, collaborate, and clarify requirements.
 
-The issues section of the repository is where we are tracking the major workflows. If you'd like to work on one of those issues, plaese comment to that effect and let us know in Slack.
+The issues section of the repository is where we are tracking the major workflows. If you'd like to work on one of those issues, please comment to that effect and let us know in Slack.
 
 Also, feel free to add new issues for smaller tasks you'd like to independently identify and work on.
 
