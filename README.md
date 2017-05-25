@@ -4,6 +4,8 @@ This [Node.js](https://www.nodejs.org) web application, designed to be deployed 
 
 ![open data notifications diagram](https://odnotify.herokuapp.com/img/diagram.png)
 
+For the MVP of this project, we'll be creating a notification system for legislation using the data from the [Open States API](http://docs.openstates.org/en/latest/index.html).
+
 * [User Experience Specification (MVP)](docs/ux.md)
 * [Background](docs/background.md)
 
