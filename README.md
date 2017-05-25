@@ -11,7 +11,7 @@ For the MVP of this project, we'll be creating a notification system for legisla
 
 ## Contributing
 
-This project is in active development - [please register and join our Slack team](https://www.twilio.org/developers) to participate, collaborate, and clarify requirements.
+This project is in early development and lots of code is still to be written - [please register and join our Slack team](https://www.twilio.org/developers) to participate, collaborate, and clarify requirements.  Our first objective is to create the SMS bot interface for subscribing for Bill updates in a state, and from there we will move on to other interfaces and data sources.
 
 The issues section of the repository is where we are tracking the major workflows. If you'd like to work on one of those issues, please comment to that effect and let us know in Slack.
 
