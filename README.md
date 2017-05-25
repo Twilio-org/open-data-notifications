@@ -7,6 +7,8 @@ This [Node.js](https://www.nodejs.org) web application, designed to be deployed 
 * [User Experience Specification (MVP)](docs/ux.md)
 * [Background](docs/background.md)
 
+This project is in active development - [please register and join our Slack team](https://www.twilio.org/developers) to participate, collaborate, and clarify requirements.
+
 ## Local Development
 
 ### Prerequisites
