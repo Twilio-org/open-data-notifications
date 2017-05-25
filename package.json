@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node bin/start.js",
+    "api_poll": "node bin/api_poll.js",
     "test": "standard && jest",
     "jest": "jest",
     "standard": "standard",
