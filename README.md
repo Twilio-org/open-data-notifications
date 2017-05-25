@@ -7,7 +7,15 @@ This [Node.js](https://www.nodejs.org) web application, designed to be deployed 
 * [User Experience Specification (MVP)](docs/ux.md)
 * [Background](docs/background.md)
 
+## Contributing
+
 This project is in active development - [please register and join our Slack team](https://www.twilio.org/developers) to participate, collaborate, and clarify requirements.
+
+The issues section of the repository is where we are tracking the major workflows. If you'd like to work on one of those issues, plaese comment to that effect and let us know in Slack.
+
+Also, feel free to add new issues for smaller tasks you'd like to independently identify and work on.
+
+Note that contributing to this project requires that you adhere to our [code of conduct](CODE_OF_CONDUCT.md).
 
 ## Local Development
 
