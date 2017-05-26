@@ -67,6 +67,12 @@ npm test
 
 ## Production Deployment (Heroku)
 
+### Push-Button Deployment
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+### Command Line Deployment
+
 To run this application on Heroku, you will need to install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).  You can create a new application for the project with:
 
 ```
