@@ -1,5 +1,7 @@
 # Open Data Notifications
 
+[![Build Status](https://travis-ci.org/Twilio-org/open-data-notifications.svg?branch=master)](https://travis-ci.org/Twilio-org/open-data-notifications)
+
 This [Node.js](https://www.nodejs.org) web application, designed to be deployed on [Heroku](https://www.heroku.com), is intended to be a general purpose notification system for open data sources. Subscribers should be able to configure notifications based on queries that will be periodically run by the system.
 
 ![open data notifications diagram](https://odnotify.herokuapp.com/img/diagram.png)
