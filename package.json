@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node bin/start.js",
+    "dev": "nodemon bin/start.js",
     "api_poll": "node bin/api_poll.js",
     "test": "standard && jest",
     "jest": "jest",
@@ -32,6 +33,7 @@
   "devDependencies": {
     "jest-cli": "^20.0.1",
     "nock": "^9.0.13",
+    "nodemon": "^1.11.0",
     "standard": "^10.0.2",
     "supertest": "^3.0.0"
   },

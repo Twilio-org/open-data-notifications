@@ -18,6 +18,22 @@ describe('SMS routes', () => {
       .expect(200)
       .then((res) => {
         let xmlContent = res.header['content-type'].indexOf('text/xml')
+        let body = content.commandNotRecognized
+        let twiml = '<?xml version="1.0" encoding="UTF-8"?>' +
+          '<Response><Message>' + body + '</Message></Response>'
+        expect(xmlContent).toBeGreaterThan(-1)
+        expect(res.text).toBe(twiml)
+      })
+  })
+
+  it('should return command list for "HELP"', () => {
+    return request(app)
+      .post('/sms')
+      .type('form')
+      .send({'From': '+14151234567', 'Body': 'HELP me'})
+      .expect(200)
+      .then((res) => {
+        let xmlContent = res.header['content-type'].indexOf('text/xml')
         let body = content.help
         let twiml = '<?xml version="1.0" encoding="UTF-8"?>' +
           '<Response><Message>' + body + '</Message></Response>'

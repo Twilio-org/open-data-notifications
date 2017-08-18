@@ -3,8 +3,8 @@
 const config = require('config')
 const express = require('express')
 const twilio = require('twilio')
-
 const content = require('../../static/content')
+const replies = require('../commands/util/replies')
 
 // Create a router for the SMS webhooks
 let router = new express.Router()
@@ -24,25 +24,34 @@ router.post('/', validator, (request, response) => {
   let twiml = new twilio.twiml.MessagingResponse()
 
   let user = request.body.From
-  let bodyParts = request.body.Body.split()
+  let bodyParts = request.body.Body.split(' ')
   let command = bodyParts[0].toLowerCase()
   let args = bodyParts.splice(1)
-  let responseText = handleCommand(user, command, args)
-  twiml.message(responseText)
 
-  // Render XML response
-  response.type('text/xml')
-  response.send(twiml.toString())
+  // Execute commands (all presumed async)
+  handleCommand(user, command, args, (responseText) => {
+    twiml.message(responseText)
+
+    // Render XML response
+    response.type('text/xml')
+    response.send(twiml.toString())
+  })
 })
 
 // Handle a user command & return a text response
-function handleCommand (user, command, args) {
-  console.log(user + ':' + command)
-  switch (command) {
-    // TODO: Handle other commands
-    default:
-      return content.help
+function handleCommand (user, command, args, callback) {
+  console.log(`Executing "${command}" for user ${user}`)
+  let commandFunc = null
+
+  try {
+    commandFunc = require(`../commands/${command}`)
+  } catch (e) {
+    // Failed to load requested command - send back list
+    return replies.delayReply(content.commandNotRecognized, callback)
   }
+
+  // Otherwise, let's execute the provided command
+  commandFunc(user, args, callback)
 }
 
 // Export SMS handler
