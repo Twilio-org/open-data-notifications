@@ -1,0 +1,20 @@
+{
+  "name": "Open Data Notifications",
+  "description": "A general purpose SMS notification system for open data sources built using Node.js and Twilio.",
+  "repository": "https://github.com/Twilio-org/open-data-notifications",
+  "keywords": ["node", "twilio", "sms", "open data", "notifications"],
+  "env": {
+    "PRODUCTION_URL": {
+      "description": "The URL to this heroku app. Ex: http://example-open-data.herokuapp.com"
+    },
+    "TWILIO_ACCOUNT_SID": {
+      "description": "Account SID from your Twilio Console at https://www.twilio.com/console"
+    },
+    "TWILIO_AUTH_TOKEN": {
+      "description": "Auth Token from your Twilio Console at https://www.twilio.com/console"
+    },
+    "OPENSTATES_API_KEY": {
+      "description": "OpenStates.org API key available at https://openstates.org/api/register/"
+    }
+  }
+}
